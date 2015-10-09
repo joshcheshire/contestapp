@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Submit</title>
+ <link rel = "stylesheet" type ="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/darkly/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+    </head>
+    <body ng-controller ='mainController'>
+        <h1>Submit your Video Here!</h1>
+
+
+<form ng-submit = "createSubmission()" method = 'post' action = '/formsubmit'>
+ <input ng-model ='submission.name' placeholder = 'Name'name="name" type="name"> 
+ <input ng-model = 'submission.url' placeholder = 'URL'name="url" type="url">
+ <input ng-model = 'submission.title' placeholder = 'Title'name="title" type="title"> 
+ <input ng-model = 'submission.description' placeholder = 'Desription'name="description" type="description">
+
+ <input type="submit">
+</form>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+
+
